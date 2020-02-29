@@ -1,7 +1,5 @@
 package collectiondemo;
 
-import comparatorinterface.ComparatorImpl;
-
 import java.util.*;
 
 public class MapMainClass {
@@ -17,6 +15,7 @@ public class MapMainClass {
         map.put("D", 11);
         map.put("E", 19);
         map.put("F", 4);
+        map.put("S", null);
         System.out.println(map.put("G", 8));
         System.out.println("added first null key "+map.put(null, 100));
         System.out.println("added second null key "+map.put(null, 2));
@@ -69,6 +68,8 @@ public class MapMainClass {
         {
             System.out.print(" " + e.nextElement());
         }
+
+
 
     }
 }

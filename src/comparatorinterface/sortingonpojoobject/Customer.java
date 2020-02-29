@@ -1,9 +1,25 @@
 package comparatorinterface.sortingonpojoobject;
 
+import java.util.Objects;
+
 public class Customer implements Comparable<Customer> {
 
     private String name;
     private int empId;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Customer customer = (Customer) o;
+        return empId == customer.empId &&
+                Objects.equals(name, customer.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, empId);
+    }
 
     public Customer(String name, int empId) {
         this.name = name;

@@ -63,5 +63,34 @@ public class ArrayDemoMainClass {
         for (Object ss : sss) {
             System.out.println(ss);
         }
+
+        String s1 = new String("B");
+        String s2 = new String("B");
+
+        if(s1.hashCode() == s2.hashCode())
+        {
+            System.out.println("Both Hashcode equals");
+        }
+        else
+        {
+            System.out.println("Both Hashcode not equals");
+        }
+
+        Integer i1 = new Integer(2);
+        Integer i2 = new Integer(3);
+
+        if(i1.hashCode() == i2.hashCode())
+        {
+            System.out.println("Both Integher Hashcode equals");
+        }
+        else
+        {
+            System.out.println("Both Integher Hashcode not equals");
+        }
+
+
     }
+
+
+
 }
