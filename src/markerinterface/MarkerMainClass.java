@@ -1,5 +1,7 @@
 package markerinterface;
 
+import oopsconceptsdemo.accessmodifier.ClassA;
+
 public class MarkerMainClass {
 
     public static void main(String args[]) {
@@ -14,6 +16,9 @@ public class MarkerMainClass {
 
         System.out.println("Before Clone:" + emp.getName());
         System.out.println("After Clone:" + empCopy.getName());
+
+        ClassB classB = new ClassB();
+        System.out.println(classB.b);
 
     }
 }
