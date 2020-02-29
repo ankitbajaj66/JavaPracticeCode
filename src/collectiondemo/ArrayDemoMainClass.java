@@ -49,5 +49,19 @@ public class ArrayDemoMainClass {
         for (Object ss : s) {
             System.out.println(ss);
         }
+
+        // Gets Synchronized List
+        List synchronizedList = Collections.synchronizedList(l);
+
+        Set sss = new HashSet();
+        sss.add(null);
+        sss.add(null);
+        sss.add(null);
+
+        System.out.println();
+        System.out.println("Hash Set output");
+        for (Object ss : sss) {
+            System.out.println(ss);
+        }
     }
 }
